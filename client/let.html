@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Negociações</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    
+</head>
+<body class="container">
+                    <h1>Arquivo de Testes LET FALHAS</h1> 
+
+    <script>
+         //A variável i não continua acessível mesmo depois do término do for
+            for(let i = 1; i < 10; i++){
+                console.log(i);
+            }
+            //alert(i)
+
+        //Multiplicas declarações com o nome da mesma variável                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+            //let nome = 'Boa tarde';
+            let nome = 'Vivi'
+            console.log(nome);
+
+         //Temporal Dead Zone
+             function minhaFuncao() {
+                   //Dead Zone
+                   alert(nome2); //Mas não deu erro de referência como o livro ensina
+                   //Até declaração da variável
+                  let nome2 = 'Flávio'; };
+
+                  minhaFuncao();
+
+        //Exemplo do livro
+        function minhaFuncao() { 
+            alert(nome); 
+            let nome = 'Flávio'; } 
+            minhaFuncao();  
+
+
+        //Temporal Dead Zone
+             function minhaFuncao() {
+                   let nome = undefined;
+                   alert(nome); 
+                   //Até declaração da variável
+                   nome = 'Flávio'; };
+
+              minhaFuncao();
+
+    </script>
+</body>
+</html>

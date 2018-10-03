@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Negociações</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    
+</head>
+<body class="container">
+                    <h1>Arquivo de Testes de JS</h1> 
+
+    <script>
+
+      //A variável i continua acessível mesmo depois do término do for
+      for(var i = 1; i < 10; i++){
+          console.log(i);
+      }
+
+      alert(i);
+    
+      //Para a gente ter que inibir o acesso
+
+      function exibeNome (){
+            var nome = 'Alfredo Souza Maia';
+            alert(nome);
+      }
+      exibeNome();
+      alert(nome); //Vai dar erro: Uncaught ReferenceError: nome is not defined
+    </script>
+</body>
+</html>
