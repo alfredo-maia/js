@@ -54,6 +54,11 @@ class Negociacao {
         return new Date(this._data.getTime());
     }
 
+    get dataFormatada (){
+        let dt = new Date (this._data.getTime());
+        return dt.getDate() + '/' + dt.getMonth()  + '/' + dt.getFullYear();
+    }
+
     get quantidade(){
         return this._quantidade;
     }
